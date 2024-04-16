@@ -1,12 +1,15 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
 import swal from "sweetalert";
 import { FaEye, FaEyeSlash, FaGithub, FaGoogle } from "react-icons/fa";
 
 const Registration = () => {
-    const { createUser, setNamePhoto, googleLogin } = useContext(AuthContext);
+    const { createUser, setNamePhoto, googleLogin, githubLogin } = useContext(AuthContext);
     const [showPassword, setShowPassword] = useState(false);
+    const location = useLocation();
+    const navigate = useNavigate();
+    console.log(location);
 
     const validatePassword = (password) => {
         if (password.length < 6) {
@@ -37,6 +40,8 @@ const Registration = () => {
                     setNamePhoto(name, url)
                         .then(res => {
                             console.log(res);
+                            swal("Good job!", "Registration Successfully", "success");
+                            navigate(location?.state ? location.state : "/");
                         })
                         .catch(error => {
                             console.log(error);
@@ -51,8 +56,20 @@ const Registration = () => {
     const handleGoogleLogin = () => {
         googleLogin()
             .then(result => {
-                swal("Good job!", "Login Successfully", "success");
+                swal("Good job!", "Registration Successfully", "success");
                 console.log(result);
+                navigate(location?.state ? location.state : "/");
+            })
+            .catch(error => {
+                console.log(error);
+            })
+    }
+    const handleGithubLogin = () => {
+        githubLogin()
+            .then(result => {
+                swal("Good job!", "Registration Successfully", "success");
+                console.log(result);
+                navigate(location?.state ? location.state : "/");
             })
             .catch(error => {
                 console.log(error);
@@ -104,8 +121,8 @@ const Registration = () => {
                         </div>
                     </form>
                     <div className="flex flex-col gap-3 my-3 px-10">
-                        <button onClick={handleGoogleLogin} className="btn"><FaGoogle /> Login with google</button>
-                        <button className="btn"><FaGithub /> Login with github</button>
+                        <button onClick={handleGoogleLogin} className="btn"><FaGoogle /> Register with google</button>
+                        <button onClick={handleGithubLogin} className="btn"><FaGithub /> Register with github</button>
                     </div>
                     <div className="px-10 mb-5">
                         <Link to="/login"><p>Already have an account? <span className="underline text-green-400">Login</span></p></Link>

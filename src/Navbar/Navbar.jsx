@@ -7,8 +7,8 @@ const Navbar = () => {
 
     const links = <>
         <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/login">Login</NavLink></li>
-        <li><NavLink to="/about">About</NavLink></li>
+        <li><NavLink to="/updateProfile">Update Profile</NavLink></li>
+        <li><NavLink to="/profile">Profile</NavLink></li>
     </>
     const handleLogOut = () => {
         logOut()
@@ -42,9 +42,9 @@ const Navbar = () => {
                     user ? <>
                         <div className="flex items-center gap-3">
                             <div className="tooltip tooltip-bottom" data-tip={user?.displayName}>
-                                <img className="w-16 rounded-full" src={user?.photoURL} />
+                                <img className="w-12 rounded-full" src={user?.photoURL} />
                             </div>
-                            <Link to="/login"><button onClick={handleLogOut} className="btn bg-green-800 text-white hover:text-black">Log Out</button></Link>
+                            <Link ><button onClick={handleLogOut} className="btn bg-green-800 text-white hover:text-black">Log Out</button></Link>
                         </div>
                     </>
                         :

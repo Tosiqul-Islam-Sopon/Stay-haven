@@ -11,6 +11,9 @@ import ErrorPage from './ErrorPage/ErrorPage';
 import Login from './Authentication/Login';
 import Registration from './Authentication/Registration';
 import AuthProvider from './Providers/AuthProvider';
+import UpdateProfile from './Update Profile/UpdateProfile';
+import PrivateRoute from './Update Profile/PrivateRoute';
+import Profile from './Profile/Profile';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +32,14 @@ const router = createBrowserRouter([
       {
         path: "/registration",
         element: <Registration></Registration>
+      },
+      {
+        path: "/updateProfile",
+        element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
+      },
+      {
+        path: "/profile",
+        element: <PrivateRoute><Profile></Profile></PrivateRoute>
       }
     ],
   },

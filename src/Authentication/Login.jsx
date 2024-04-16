@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
 import { FaEye, FaEyeSlash, FaGithub, FaGoogle } from "react-icons/fa";
 import swal from "sweetalert";
@@ -7,6 +7,8 @@ import swal from "sweetalert";
 const Login = () => {
     const { logIn, googleLogin, githubLogin } = useContext(AuthContext);
     const [showPassword, setShowPassword] = useState(false);
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const handleLogin = e => {
         e.preventDefault();
@@ -16,6 +18,7 @@ const Login = () => {
             .then(result => {
                 swal("Good job!", "Login Successfully", "success");
                 console.log(result);
+                navigate(location?.state ? location.state : "/");
             })
             .catch(error => {
                 swal("Error!", { error }, "error");
@@ -28,17 +31,18 @@ const Login = () => {
             .then(result => {
                 swal("Good job!", "Login Successfully", "success");
                 console.log(result);
+                navigate(location?.state ? location.state : "/");
             })
             .catch(error => {
                 console.log(error);
             })
     }
     const handleGithubLogin = () => {
-        console.log("github login............");
         githubLogin()
             .then(result => {
                 swal("Good job!", "Login Successfully", "success");
                 console.log(result);
+                navigate(location?.state ? location.state : "/");
             })
             .catch(error => {
                 console.log(error);
@@ -83,7 +87,7 @@ const Login = () => {
                         <button onClick={handleGithubLogin} className="btn"><FaGithub /> Login with github</button>
                     </div>
                     <div className="px-10 mb-5">
-                        <Link to="/registration"><p>Don&apos;t have an account? <span className="underline text-green-400">Register</span></p></Link>
+                        <Link state={location?.state} to="/registration"><p>Don&apos;t have an account? <span className="underline text-green-400">Register</span></p></Link>
                     </div>
                 </div>
             </div>
