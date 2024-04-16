@@ -42,7 +42,7 @@ const Navbar = () => {
                     user ? <>
                         <div className="flex items-center gap-3">
                             <div className="tooltip tooltip-bottom" data-tip={user?.displayName}>
-                                <img className="w-12 rounded-full" src={user?.photoURL} />
+                                <img className="w-12 h-12 rounded-full" src={user?.photoURL} />
                             </div>
                             <Link ><button onClick={handleLogOut} className="btn bg-green-800 text-white hover:text-black">Log Out</button></Link>
                         </div>
