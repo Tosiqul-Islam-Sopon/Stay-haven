@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "title": "Luxury Resort Villa",
+        "name": "Luxury Hospitality",
+        "image": "https://i.ibb.co/WKCskw3/8958.jpg",
+        "description": "Indulge in luxury at our exquisite resort villa with stunning ocean views and unparalleled amenities.",
+        "price": "$1000/night",
+        "status": "rent",
+        "area": "5000 sq ft",
+        "location": "Tropical Island Paradise",
+        "facilities": [
+            "Private Pool",
+            "Spa",
+            "Private Beach Access"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Boutique Hotel Retreat",
+        "name": "Boutique Hospitality",
+        "image": "https://i.ibb.co/XDTMgMk/3915.jpg",
+        "description": "Experience tranquility at our charming boutique hotel nestled in the heart of the countryside.",
+        "price": "$300/night",
+        "status": "rent",
+        "area": "2000 sq ft",
+        "location": "Scenic Countryside",
+        "facilities": [
+            "Cozy Rooms",
+            "Gourmet Dining",
+            "Outdoor Lounge"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Ski Chalet Retreat",
+        "name": "Mountain Hospitality",
+        "image": "https://i.ibb.co/wyP4Km4/2151302612.jpg",
+        "description": "Escape to our cozy ski chalet nestled in the snow-capped mountains, perfect for winter adventures.",
+        "price": "$500/night",
+        "status": "rent",
+        "area": "3000 sq ft",
+        "location": "Alpine Wonderland",
+        "facilities": [
+            "Ski-In/Ski-Out Access",
+            "Sauna",
+            "Fireplace"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Urban Boutique Hotel",
+        "name": "City Hospitality",
+        "image": "https://i.ibb.co/DW03WqS/127609.jpg",
+        "description": "Immerse yourself in the vibrant city life at our stylish urban boutique hotel located in the heart of downtown.",
+        "price": "$250/night",
+        "status": "rent",
+        "area": "1500 sq ft",
+        "location": "City Center",
+        "facilities": [
+            "Modern Rooms",
+            "Rooftop Bar",
+            "Fitness Center"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Coastal Retreat Cottage",
+        "name": "Coastal Hospitality",
+        "image": "https://i.ibb.co/t2yN7d5/2151302626.jpg",
+        "description": "Relax and unwind at our charming coastal retreat cottage overlooking the azure sea, perfect for beach lovers.",
+        "price": "$400/night",
+        "status": "rent",
+        "area": "2500 sq ft",
+        "location": "Seaside Haven",
+        "facilities": [
+            "Oceanfront Deck",
+            "Outdoor BBQ",
+            "Beach Access"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Mountain Lodge Getaway",
+        "name": "Wilderness Hospitality",
+        "image": "https://i.ibb.co/hmJG5p4/2151302634.jpg",
+        "description": "Embark on an adventure at our rustic mountain lodge nestled amidst towering pine trees and majestic peaks.",
+        "price": "$350/night",
+        "status": "rent",
+        "area": "2800 sq ft",
+        "location": "Wilderness Sanctuary",
+        "facilities": [
+            "Hiking Trails",
+            "Campfire Area",
+            "Scenic Views"
+        ]
+    }
+]
