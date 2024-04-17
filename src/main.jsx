@@ -15,6 +15,7 @@ import UpdateProfile from './Update Profile/UpdateProfile';
 import PrivateRoute from './Update Profile/PrivateRoute';
 import Profile from './Profile/Profile';
 import EstateDetails from './Home/EstateDetails';
+import Features from './Features/Features';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "/profile",
         element: <PrivateRoute><Profile></Profile></PrivateRoute>
+      },
+      {
+        path: "/features",
+        element: <Features></Features>
       },
       {
         path: '/estateDetails/:id',
