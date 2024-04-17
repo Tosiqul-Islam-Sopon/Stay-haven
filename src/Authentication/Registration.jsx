@@ -3,8 +3,9 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
 import swal from "sweetalert";
 import { FaEye, FaEyeSlash, FaGithub, FaGoogle } from "react-icons/fa";
-
+import DocumentTitle from '../Title/Title'
 const Registration = () => {
+    DocumentTitle("Register");
     const { createUser, setNamePhoto, googleLogin, githubLogin } = useContext(AuthContext);
     const [showPassword, setShowPassword] = useState(false);
     const location = useLocation();

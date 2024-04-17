@@ -4,9 +4,9 @@ import image2 from "../../src/assets/images/2.jpg"
 import image3 from "../../src/assets/images/3.jpg"
 import image4 from "../../src/assets/images/4.jpg"
 import Estate from "./Estate";
-
+import DocumentTitle from '../Title/Title'
 const Home = () => {
-
+    DocumentTitle("Home");
     const estates = useLoaderData();
 
     return (

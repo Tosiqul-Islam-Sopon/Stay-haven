@@ -1,6 +1,7 @@
 import { GoDotFill } from "react-icons/go";
-
+import DocumentTitle from '../Title/Title'
 const Features = () => {
+    DocumentTitle("Features");
     return (
         <div>
             <h1 className="text-3xl text-center border-b-2 font-semibold p-5">Experience the STAYHAVEN Advantages</h1>

@@ -1,8 +1,10 @@
 import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
 import { Link } from "react-router-dom";
+import DocumentTitle from '../Title/Title'
 
 const Profile = () => {
+    DocumentTitle("Profile");
     const { user } = useContext(AuthContext);
     return (
         <div className="w-3/4 mx-auto rounded-lg bg-base-200">

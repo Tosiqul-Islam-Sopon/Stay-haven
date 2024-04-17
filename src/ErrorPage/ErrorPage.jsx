@@ -1,6 +1,7 @@
 import { Link, useRouteError } from "react-router-dom";
-
+import DocumentTitle from '../Title/Title'
 export default function ErrorPage() {
+    DocumentTitle("Error")
     const error = useRouteError();
     console.error(error);
 

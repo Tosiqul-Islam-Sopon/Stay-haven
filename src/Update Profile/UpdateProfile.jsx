@@ -2,8 +2,9 @@ import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
 import swal from "sweetalert";
 import { useNavigate } from "react-router-dom";
-
+import DocumentTitle from '../Title/Title'
 const UpdateProfile = () => {
+    DocumentTitle("Update Profile");
     const { user, setNamePhoto } = useContext(AuthContext);
     const navigate = useNavigate();
     const handleUpdateProfile = e => {
