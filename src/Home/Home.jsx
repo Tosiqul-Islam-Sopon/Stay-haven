@@ -16,9 +16,9 @@ const Home = () => {
                     <img src={image1} className="w-full" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" className="btn btn-circle">❮</a>
-                        <div className="flex flex-col items-center gap-3">
-                            <p className="text-white text-5xl font-bold">STAY HAVEN</p>
-                            <p className="text-white text-3xl font-semibold">Stay with us, feel Haven</p>
+                        <div className="flex flex-col items-center justify-center gap-3">
+                            <p className="text-white text-3xl lg:text-5xl font-bold">STAY HAVEN</p>
+                            <p className="text-white text-xl lg:text-3xl font-semibold text-center">Stay with us, feel Haven</p>
                         </div>
                         <a href="#slide2" className="btn btn-circle">❯</a>
                     </div>
@@ -27,9 +27,9 @@ const Home = () => {
                     <img src={image2} className="w-full" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" className="btn btn-circle">❮</a>
-                        <div className="flex flex-col items-center gap-3">
-                            <p className="text-white text-5xl font-bold">STAY HAVEN</p>
-                            <p className="text-white text-3xl font-semibold">Stay with us, feel Haven</p>
+                        <div className="flex flex-col items-center justify-center gap-3">
+                            <p className="text-white text-3xl lg:text-5xl font-bold">STAY HAVEN</p>
+                            <p className="text-white text-xl lg:text-3xl font-semibold text-center">Stay with us, feel Haven</p>
                         </div>
                         <a href="#slide3" className="btn btn-circle">❯</a>
                     </div>
@@ -38,9 +38,9 @@ const Home = () => {
                     <img src={image3} className="w-full" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" className="btn btn-circle">❮</a>
-                        <div className="flex flex-col items-center gap-3">
-                            <p className="text-white text-5xl font-bold">STAY HAVEN</p>
-                            <p className="text-white text-3xl font-semibold">Stay with us, feel Haven</p>
+                        <div className="flex flex-col items-center justify-center gap-3">
+                            <p className="text-white text-3xl lg:text-5xl font-bold">STAY HAVEN</p>
+                            <p className="text-white text-xl lg:text-3xl font-semibold text-center">Stay with us, feel Haven</p>
                         </div>
                         <a href="#slide4" className="btn btn-circle">❯</a>
                     </div>
@@ -49,19 +49,19 @@ const Home = () => {
                     <img src={image4} className="w-full" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide3" className="btn btn-circle">❮</a>
-                        <div className="flex flex-col items-center gap-3">
-                            <p className="text-white text-5xl font-bold">STAY HAVEN</p>
-                            <p className="text-white text-3xl font-semibold">Stay with us, feel Haven</p>
+                        <div className="flex flex-col items-center justify-center gap-3">
+                            <p className="text-white text-3xl lg:text-5xl font-bold">STAY HAVEN</p>
+                            <p className="text-white text-xl lg:text-3xl font-semibold text-center">Stay with us, feel Haven</p>
                         </div>
                         <a href="#slide1" className="btn btn-circle">❯</a>
                     </div>
                 </div>
             </div>
-            <div className="p-10 space-y-4 text-center">
+            <div className="p-2 lg:p-10 space-y-4 text-center">
                 <h1 className="text-4xl font-bold text-center">Estates</h1>
                 <p>Welcome to STAYHAVEN, where hospitality meets excellence. Discover a diverse selection of accommodations, from luxurious resorts to cozy lodges, tailored to every preference and budget. Your haven away from home awaits at STAYHAVEN, where personalized service and seamless booking ensure an unforgettable experience.</p>
             </div>
-            <div className="grid grid-cols-3 gap-2">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
                 {
                     estates.map(data => <Estate key={data.id} estate={data}></Estate>)
                 }

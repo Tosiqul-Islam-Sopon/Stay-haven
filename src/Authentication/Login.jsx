@@ -22,8 +22,8 @@ const Login = () => {
                 navigate(location?.state ? location.state : "/");
             })
             .catch(error => {
-                swal("Error!", { error }, "error");
-                console.log(error);
+                swal("Error!", "Uppsss! Somethig went wrong", "error");
+                console.log(error.errorMessage);
             })
     }
 
@@ -53,9 +53,9 @@ const Login = () => {
         <div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex-col gap-5 ">
                 <div className="text-center lg:text-left">
-                    <h1 className="text-5xl font-bold">Login now!</h1>
+                    <h1 className="text-3xl lg:text-5xl font-bold">Login now!</h1>
                 </div>
-                <div className="card shrink-0 w-[400px] shadow-2xl bg-base-100">
+                <div className="card shrink-0 w-full lg:w-[400px] shadow-2xl bg-base-100">
                     <form className="card-body" onSubmit={handleLogin}>
                         <div className="form-control">
                             <label className="label">

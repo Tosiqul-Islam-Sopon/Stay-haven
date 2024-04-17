@@ -14,16 +14,16 @@ const EstateDetails = () => {
     return (
         <div className="card w-full bg-base-100 shadow-xl ">
             <figure><img src={estate.image} alt="Shoes" /></figure>
-            <div className="p-10 space-y-5">
-                <h1 className="text-4xl text-center font-bold open_sans">{estate.name}</h1>
-                <div>
-                    <div className="flex justify-between">
-                        <h2 className="text-2xl font-semibold">{estate.title}</h2>
+            <div className="p-2 lg:p-10 space-y-5">
+                <h1 className="text-2xl lg:text-4xl text-center font-bold open_sans">{estate.name}</h1>
+                <div className="space-y-3">
+                    <div className="flex justify-between flex-col lg:flex-row gap-2">
+                        <h2 className="text-xl lg:text-2xl font-semibold">{estate.title}</h2>
                         <p className='flex items-center gap-2'><CiLocationOn /> {estate.location}</p>
                     </div>
                     <p>{estate.description}</p>
                 </div>
-                <div className='flex justify-between p-5 border-y-2'>
+                <div className='flex justify-between p-5 border-y-2 flex-col lg:flex-row gap-2'>
                     {
                         estate.facilities.map((data, ind) => <p key={ind} className='flex items-center'><span><GoDotFill /></span> {data}</p>)
                     }
