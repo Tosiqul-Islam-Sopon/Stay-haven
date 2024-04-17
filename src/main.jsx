@@ -14,6 +14,7 @@ import AuthProvider from './Providers/AuthProvider';
 import UpdateProfile from './Update Profile/UpdateProfile';
 import PrivateRoute from './Update Profile/PrivateRoute';
 import Profile from './Profile/Profile';
+import EstateDetails from './Home/EstateDetails';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        loader: () => fetch('/data.json')
       },
       {
         path: "/login",
@@ -40,6 +42,11 @@ const router = createBrowserRouter([
       {
         path: "/profile",
         element: <PrivateRoute><Profile></Profile></PrivateRoute>
+      },
+      {
+        path: '/estateDetails/:id',
+        element: <EstateDetails></EstateDetails>,
+        loader: () => fetch('/data.json')
       }
     ],
   },
