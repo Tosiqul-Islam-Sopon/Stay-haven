@@ -17,7 +17,7 @@ const Home = () => {
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" className="btn btn-circle">❮</a>
                         <div className="flex flex-col items-center justify-center gap-3">
-                            <p className="text-white text-3xl lg:text-5xl font-bold">STAY HAVEN</p>
+                            <p className="text-white text-3xl lg:text-5xl font-bold">STAY <span className="text-[#cf827c]">HAVEN</span></p>
                             <p className="text-white text-xl lg:text-3xl font-semibold text-center">Stay with us, feel Haven</p>
                         </div>
                         <a href="#slide2" className="btn btn-circle">❯</a>
@@ -28,7 +28,7 @@ const Home = () => {
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" className="btn btn-circle">❮</a>
                         <div className="flex flex-col items-center justify-center gap-3">
-                            <p className="text-white text-3xl lg:text-5xl font-bold">STAY HAVEN</p>
+                            <p className="text-white text-3xl lg:text-5xl font-bold">STAY <span className="text-[#cf827c]">HAVEN</span></p>
                             <p className="text-white text-xl lg:text-3xl font-semibold text-center">Stay with us, feel Haven</p>
                         </div>
                         <a href="#slide3" className="btn btn-circle">❯</a>
@@ -39,7 +39,7 @@ const Home = () => {
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" className="btn btn-circle">❮</a>
                         <div className="flex flex-col items-center justify-center gap-3">
-                            <p className="text-white text-3xl lg:text-5xl font-bold">STAY HAVEN</p>
+                            <p className="text-white text-3xl lg:text-5xl font-bold">STAY <span className="text-[#cf827c]">HAVEN</span></p>
                             <p className="text-white text-xl lg:text-3xl font-semibold text-center">Stay with us, feel Haven</p>
                         </div>
                         <a href="#slide4" className="btn btn-circle">❯</a>
@@ -50,7 +50,7 @@ const Home = () => {
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide3" className="btn btn-circle">❮</a>
                         <div className="flex flex-col items-center justify-center gap-3">
-                            <p className="text-white text-3xl lg:text-5xl font-bold">STAY HAVEN</p>
+                            <p className="text-white text-3xl lg:text-5xl font-bold">STAY <span className="text-[#cf827c]">HAVEN</span></p>
                             <p className="text-white text-xl lg:text-3xl font-semibold text-center">Stay with us, feel Haven</p>
                         </div>
                         <a href="#slide1" className="btn btn-circle">❯</a>

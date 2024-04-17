@@ -16,7 +16,7 @@ const Profile = () => {
                     <h1 className="text-3xl font-bold">{user?.displayName}</h1>
                     <p className="py-2 text-xl"> <span className="font-bold">Email:</span> {user?.email}</p>
                     <p className="py-2 break-words"> <span className="font-bold">Photo URL:</span> {user?.photoURL}</p>
-                    <Link to="/updateProfile"><button className="btn btn-primary">Update Profile</button></Link>
+                    <Link to="/updateProfile"><button className="btn bg-[#cf827c] text-white text-xl font-medium">Update Profile</button></Link>
                 </div>
             </div>
         </div>

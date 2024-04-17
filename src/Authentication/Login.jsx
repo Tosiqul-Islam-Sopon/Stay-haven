@@ -80,12 +80,12 @@ const Login = () => {
                         </div>
 
                         <div className="form-control mt-6">
-                            <button className="btn btn-primary">Login</button>
+                            <button className="btn bg-[#cf827c] text-white text-xl font-medium">Login</button>
                         </div>
                     </form>
                     <div className="flex flex-col gap-3 my-3 px-10">
-                        <button onClick={handleGoogleLogin} className="btn"><FaGoogle /> Login with google</button>
-                        <button onClick={handleGithubLogin} className="btn"><FaGithub /> Login with github</button>
+                        <button onClick={handleGoogleLogin} className="btn bg-[#cf827c] text-white hover:text-black"><FaGoogle /> Login with google</button>
+                        <button onClick={handleGithubLogin} className="btn hover:bg-[#5c9154] hover:text-white"><FaGithub /> Login with github</button>
                     </div>
                     <div className="px-10 mb-5">
                         <Link state={location?.state} to="/registration"><p>Don&apos;t have an account? <span className="underline text-green-400">Register</span></p></Link>

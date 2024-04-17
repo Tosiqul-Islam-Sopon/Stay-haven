@@ -118,12 +118,12 @@ const Registration = () => {
                             <input type={showPassword ? "text" : "password"} placeholder="Password" name="password" className="input input-bordered" required />
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn btn-primary">Register</button>
+                            <button className="btn bg-[#cf827c] text-white text-xl font-medium">Register</button>
                         </div>
                     </form>
                     <div className="flex flex-col gap-3 my-3 px-10">
-                        <button onClick={handleGoogleLogin} className="btn"><FaGoogle /> Register with google</button>
-                        <button onClick={handleGithubLogin} className="btn"><FaGithub /> Register with github</button>
+                        <button onClick={handleGoogleLogin} className="btn bg-[#cf827c] text-white hover:text-black"><FaGoogle /> Login with google</button>
+                        <button onClick={handleGithubLogin} className="btn hover:bg-[#5c9154] hover:text-white"><FaGithub /> Login with github</button>
                     </div>
                     <div className="px-10 mb-5">
                         <Link to="/login"><p>Already have an account? <span className="underline text-green-400">Login</span></p></Link>

@@ -31,7 +31,7 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Stay Haven</a>
+                <a className="btn btn-ghost text-xl">Stay <span className="text-[#cf827c]">Haven</span></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -45,11 +45,11 @@ const Navbar = () => {
                             <div className="tooltip tooltip-bottom" data-tip={user?.displayName}>
                                 <img className="w-12 h-12 rounded-full" src={user?.photoURL} />
                             </div>
-                            <Link ><button onClick={handleLogOut} className="btn bg-green-800 text-white hover:text-black">Log Out</button></Link>
+                            <Link ><button onClick={handleLogOut} className="btn bg-[#cf827c] text-white hover:text-black">Log Out</button></Link>
                         </div>
                     </>
                         :
-                        <Link to="/login"><a className="btn bg-green-800 text-white hover:text-black">Login</a></Link>
+                        <Link to="/login"><a className="btn bg-[#cf827c] text-white hover:text-black">Login</a></Link>
                 }
             </div>
         </div>

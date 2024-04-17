@@ -50,7 +50,7 @@ const UpdateProfile = () => {
                             <input type="email" placeholder="Email" name="email" className="input input-bordered" value={user?.email} disabled />
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn btn-primary">Update</button>
+                            <button className="btn bg-[#cf827c] text-white text-xl font-medium">Update</button>
                         </div>
                     </form>
                 </div>

@@ -22,7 +22,7 @@ const Estate = ({ estate }) => {
                     <p className="flex items-center gap-1"><span><IoIosPricetags /></span> {estate.price}</p>
                 </div>
                 <div className="w-full">
-                    <Link to={`/estateDetails/${estate.id}`}><button className="btn btn-primary w-full">View Property</button></Link>
+                    <Link to={`/estateDetails/${estate.id}`}><button className="btn bg-[#cf827c] w-full text-white">View Property</button></Link>
                 </div>
             </div>
         </div>
