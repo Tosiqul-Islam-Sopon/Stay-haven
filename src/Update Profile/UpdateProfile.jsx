@@ -13,9 +13,10 @@ const UpdateProfile = () => {
         const url = e.target.photo.value;
         setNamePhoto(name, url)
             .then(res => {
-                console.log("adfkjajk", res);
-                swal("Good job!", "Profile Updated Successfully", "success");
+                console.log(res);
                 navigate("/profile")
+                window.location.reload();
+                swal("Good job!", "Profile Updated Successfully", "success");
             })
             .catch(error => {
                 console.log(error);
