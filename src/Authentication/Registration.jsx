@@ -122,8 +122,8 @@ const Registration = () => {
                         </div>
                     </form>
                     <div className="flex flex-col gap-3 my-3 px-10">
-                        <button onClick={handleGoogleLogin} className="btn bg-[#cf827c] text-white hover:text-black"><FaGoogle /> Login with google</button>
-                        <button onClick={handleGithubLogin} className="btn hover:bg-[#5c9154] hover:text-white"><FaGithub /> Login with github</button>
+                        <button onClick={handleGoogleLogin} className="btn bg-[#cf827c] text-white hover:text-black"><FaGoogle /> Continue with google</button>
+                        <button onClick={handleGithubLogin} className="btn hover:bg-[#5c9154] hover:text-white"><FaGithub /> Continue with github</button>
                     </div>
                     <div className="px-10 mb-5">
                         <Link to="/login"><p>Already have an account? <span className="underline text-green-400">Login</span></p></Link>
