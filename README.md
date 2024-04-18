@@ -1,5 +1,5 @@
 # STAYHAVEN
-this is a Real Estate website of Hospitality type.
+This is a Real Estate website of Hospitality type.
 
 [Live Link : ](https://stay-haven.web.app/)
 
