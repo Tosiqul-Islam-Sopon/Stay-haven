@@ -7,7 +7,7 @@ import { IoIosPricetags } from 'react-icons/io';
 
 const Estate = ({ estate }) => {
     return (
-        <div className="card card-compact  bg-base-100 shadow-xl">
+        <div data-aos="fade-up" className="card card-compact  bg-base-100 shadow-xl">
             <figure><img src={estate.image} alt="Shoes" /></figure>
             <div className="p-3 space-y-3">
                 <h2 className="card-title">{estate.title}</h2>

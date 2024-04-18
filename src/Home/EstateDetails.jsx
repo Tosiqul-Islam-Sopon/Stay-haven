@@ -12,8 +12,8 @@ const EstateDetails = () => {
     const estate = estates.find(data => data.id === parseInt(id.id));
 
     return (
-        <div className="card w-full bg-base-100 shadow-xl ">
-            <figure><img src={estate.image} alt="Shoes" /></figure>
+        <div data-aos="fade-up" className="card w-full bg-base-100 shadow-xl ">
+            <figure><img className="rounded-xl" src={estate.image} alt="Estate image" /></figure>
             <div className="p-2 lg:p-10 space-y-5">
                 <h1 className="text-2xl lg:text-4xl text-center font-bold open_sans">{estate.name}</h1>
                 <div className="space-y-3">
