@@ -15,7 +15,7 @@ const Estate = ({ estate }) => {
         AOS.init();
       }, [])
     return (
-        <div data-aos="fade-up" className="animate__animated animate__bounce card card-compact  bg-base-100 shadow-xl">
+        <div data-aos="fade-up" className="animate__animated animate__backInUp card card-compact  bg-base-100 shadow-xl">
             <figure><img src={estate.image} alt="Shoes" /></figure>
             <div className="p-3 space-y-3">
                 <h2 className="card-title">{estate.title}</h2>

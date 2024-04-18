@@ -11,7 +11,7 @@ const Features = () => {
         AOS.init();
       }, [])
     return (
-        <div data-aos="fade-up" className="animate__animated animate__bounce min-h-screen">
+        <div data-aos="fade-up" className="animate__animated animate__backInUp min-h-screen">
             <h1 className="text-3xl text-center border-b-2 font-semibold p-5">Experience the STAYHAVEN Advantages</h1>
             <p className="shadow-lg p-3 w-fit rounded-xl border border-gray-200 flex gap-2 items-center mt-3 font-medium text-xl ml-10"><span><GoDotFill /></span> Exclusive deals and discounts on select accommodations</p>
             <p className="shadow-lg p-3 w-fit rounded-xl border border-gray-200 flex gap-2 items-center mt-3 font-medium text-xl ml-10"><span><GoDotFill /></span> User-friendly interface for hassle-free booking</p>

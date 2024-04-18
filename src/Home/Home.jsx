@@ -19,7 +19,7 @@ const Home = () => {
       }, [])
     return (
         <div>
-            <div data-aos="fade-left" className="animate__animated animate__bounce carousel w-full max-h-screen ">
+            <div data-aos="fade-left" className="animate__animated animate__backInRight carousel w-full max-h-screen ">
                 <div id="slide1" className="carousel-item relative w-full ">
                     <img src={image1} className="w-full" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -65,7 +65,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div data-aos="fade-up" className="animate__animated animate__bounce p-2 lg:p-10 space-y-4 text-center">
+            <div data-aos="fade-up" className="animate__animated animate__backInUp p-2 lg:p-10 space-y-4 text-center">
                 <h1 className="text-4xl font-bold text-center">Estates</h1>
                 <p>Welcome to STAYHAVEN, where hospitality meets excellence. Discover a diverse selection of accommodations, from luxurious resorts to cozy lodges, tailored to every preference and budget. Your haven away from home awaits at STAYHAVEN, where personalized service and seamless booking ensure an unforgettable experience.</p>
             </div>

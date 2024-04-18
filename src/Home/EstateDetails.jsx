@@ -20,7 +20,7 @@ const EstateDetails = () => {
       }, [])
 
     return (
-        <div data-aos="fade-up" className="animate__animated animate__bounce card w-full bg-base-100 shadow-xl ">
+        <div data-aos="fade-up" className="animate__animated animate__backInUp card w-full bg-base-100 shadow-xl ">
             <figure><img className="rounded-xl" src={estate.image} alt="Estate image" /></figure>
             <div className="p-2 lg:p-10 space-y-5">
                 <h1 className="text-2xl lg:text-4xl text-center font-bold open_sans">{estate.name}</h1>

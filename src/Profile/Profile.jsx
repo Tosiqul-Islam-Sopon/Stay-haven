@@ -15,7 +15,7 @@ const Profile = () => {
         AOS.init();
       }, [])
     return (
-        <div data-aos="fade-up" className="animate__animated animate__bounce w-3/4 mx-auto rounded-lg bg-base-200 min-h-screen">
+        <div data-aos="fade-up" className="animate__animated animate__backInUp w-3/4 mx-auto rounded-lg bg-base-200 min-h-screen">
             <div className="flex flex-col gap-5 p-5">
                 <div className="flex-1 flex justify-center items-center">
                     <img src={user?.photoURL} alt="No profile image" className="w-full rounded-lg shadow-2xl" />

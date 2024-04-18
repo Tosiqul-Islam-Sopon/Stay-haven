@@ -85,7 +85,7 @@ const Registration = () => {
         AOS.init();
       }, [])
     return (
-        <div data-aos="fade-up" className="animate__animated animate__bounce hero min-h-screen bg-base-200">
+        <div data-aos="fade-up" className="animate__animated animate__backInUp hero min-h-screen bg-base-200">
             <div className="hero-content flex-col gap-10 px-10">
                 <div className="text-center lg:text-left">
                     <h1 className="text-3xl lg:text-5xl font-bold">Register now!</h1>
