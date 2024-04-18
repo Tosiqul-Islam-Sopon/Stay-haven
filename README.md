@@ -1,8 +1,21 @@
-# React + Vite
+# STAYHAVEN
+this is a Real Estate website of Hospitality type.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Live Link : ](https://stay-haven.web.app/)
 
-Currently, two official plugins are available:
+The features and characteristics of this website:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Home Page: The home page serves as the central hub of the website. It provides the link of other pages.
+* Update Profile: The "Update Profile" feature allows users to manage their personal information. Users can edit their profile details, such as user name and Photo URL.
+* User Profile: The User Profile section provides users with a personalized dashboard where they can view their account details.
+* View Property: The "View Property" feature enables users to browse and explore details of a particular property.
+* Features: In this section users can see the main features and advantages of our project
+
+
+Below Three packages I used for the challenge task
+
+1. AOS Package 
+
+2. Animate.css 
+
+3. Swiper Slider
