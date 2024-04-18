@@ -3,6 +3,11 @@ import { AuthContext } from "../Providers/AuthProvider";
 import swal from "sweetalert";
 import { useNavigate } from "react-router-dom";
 import DocumentTitle from '../Title/Title'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+import 'animate.css';
+
 const UpdateProfile = () => {
     DocumentTitle("Update Profile");
     const { user, setNamePhoto } = useContext(AuthContext);
@@ -21,11 +26,12 @@ const UpdateProfile = () => {
             .catch(error => {
                 console.log(error);
             })
-
-
     }
+    useEffect(() => {
+        AOS.init();
+      }, [])
     return (
-        <div data-aos="fade-up" className="hero min-h-screen bg-base-200">
+        <div data-aos="fade-up" className="animate__animated animate__bounce hero min-h-screen bg-base-200">
             <div className="hero-content flex-col gap-10 px-10">
                 <div className="text-center lg:text-left">
                     <h1 className="text-3xl lg:text-5xl font-bold">Update Profile!</h1>

@@ -1,5 +1,15 @@
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
+
 const Footer = () => {
+
+    useEffect(() => {
+        AOS.init();
+      }, [])
+
     return (
         <footer className="footer items-center p-4 bg-neutral text-neutral-content">
             <aside className="items-center grid-flow-col">

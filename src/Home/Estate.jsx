@@ -4,10 +4,18 @@ import { GoDotFill } from "react-icons/go";
 import { FaExternalLinkSquareAlt } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { IoIosPricetags } from 'react-icons/io';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+import 'animate.css';
+
 
 const Estate = ({ estate }) => {
+    useEffect(() => {
+        AOS.init();
+      }, [])
     return (
-        <div data-aos="fade-up" className="card card-compact  bg-base-100 shadow-xl">
+        <div data-aos="fade-up" className="animate__animated animate__bounce card card-compact  bg-base-100 shadow-xl">
             <figure><img src={estate.image} alt="Shoes" /></figure>
             <div className="p-3 space-y-3">
                 <h2 className="card-title">{estate.title}</h2>

@@ -1,9 +1,16 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
+
+    useEffect(() => {
+        AOS.init();
+      }, [])
 
     const links = <>
         <li><NavLink to="/">Home</NavLink></li>
