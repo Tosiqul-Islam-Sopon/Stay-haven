@@ -1,13 +1,9 @@
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import "./Banner.css"
-
-// import required modules
 import { Pagination, Navigation } from 'swiper/modules';
-
 import slide_image_1 from "../../src/assets/images/1.jpg"
 import slide_image_2 from "../../src/assets/images/2.jpg"
 import slide_image_3 from "../../src/assets/images/3.jpg"

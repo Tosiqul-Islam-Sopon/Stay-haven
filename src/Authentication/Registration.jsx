@@ -51,10 +51,12 @@ const Registration = () => {
                         })
                         .catch(error => {
                             console.log(error);
+                            swal("Error!", "Uppsss! Somethig went wrong", "error");
                         })
                 })
                 .catch(error => {
                     console.log(error);
+                    swal("Error!", "Uppsss! Somethig went wrong", "error");
                 })
         }
 
@@ -68,6 +70,7 @@ const Registration = () => {
             })
             .catch(error => {
                 console.log(error);
+                swal("Error!", "Uppsss! Somethig went wrong", "error");
             })
     }
     const handleGithubLogin = () => {
@@ -79,6 +82,7 @@ const Registration = () => {
             })
             .catch(error => {
                 console.log(error);
+                swal("Error!", "Uppsss! Somethig went wrong", "error");
             })
     }
     useEffect(() => {

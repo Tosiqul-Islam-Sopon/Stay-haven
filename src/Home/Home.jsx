@@ -1,8 +1,4 @@
 import { useLoaderData } from "react-router-dom";
-import image1 from "../../src/assets/images/1.jpg"
-import image2 from "../../src/assets/images/2.jpg"
-import image3 from "../../src/assets/images/3.jpg"
-import image4 from "../../src/assets/images/4.jpg"
 import Estate from "./Estate";
 import DocumentTitle from '../Title/Title'
 import AOS from 'aos';

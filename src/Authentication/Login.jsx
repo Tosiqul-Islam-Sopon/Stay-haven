@@ -41,6 +41,7 @@ const Login = () => {
             })
             .catch(error => {
                 console.log(error);
+                swal("Error!", "Uppsss! Somethig went wrong", "error");
             })
     }
     const handleGithubLogin = () => {
@@ -52,6 +53,7 @@ const Login = () => {
             })
             .catch(error => {
                 console.log(error);
+                swal("Error!", "Uppsss! Somethig went wrong", "error");
             })
     }
     useEffect(() => {
