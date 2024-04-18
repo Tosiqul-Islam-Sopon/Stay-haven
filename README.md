@@ -9,7 +9,7 @@ The features and characteristics of this website:
 * Update Profile: The "Update Profile" feature allows users to manage their personal information. Users can edit their profile details, such as user name and Photo URL.
 * User Profile: The User Profile section provides users with a personalized dashboard where they can view their account details.
 * View Property: The "View Property" feature enables users to browse and explore details of a particular property.
-* Features: In this section users can see the main features and advantages of our project
+* Features: In this section users can see the main features and advantages of our website
 
 
 Below Three packages I used for the challenge task
